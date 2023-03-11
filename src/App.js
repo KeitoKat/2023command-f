@@ -4,6 +4,9 @@ import Profile from "./components/Profile.js"
 import Footer from './components/Footer.js';
 
 import {useState, useEffect} from "react"
+import "bootstrap/dist/css/bootstrap.min.css";
+import Navbar from "./Navigation/Navbar.js";
+
 
 
 function App() {
@@ -47,7 +50,8 @@ function App() {
         description="Software dev" 
         name="Andrea" 
         image="https://bloximages.chicago2.vip.townnews.com/vtcng.com/content/tncms/assets/v3/editorial/5/e8/5e8a9a36-4dc1-11ea-83e8-1787e2a1ead4/5e443cedd0598.image.jpg?resize=394%2C500"/>
-      
+
+      <Navbar />
     </div>
   );
 }

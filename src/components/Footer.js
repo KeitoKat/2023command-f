@@ -11,63 +11,34 @@ Heading,
 const Footer = () => {
 return (
 	<Box>
-	<h1 style={{ color: "green",
+	{/* <h1 style={{ color: "green",
 				textAlign: "center",
 				marginTop: "-50px" }}>
 		GeeksforGeeks: A Computer Science Portal for Geeks
-	</h1>
+	</h1> */}
 	<Container>
 		<Row>
 		<Column>
-			<Heading>About Us</Heading>
-			<FooterLink href="#">Aim</FooterLink>
-			<FooterLink href="#">Vision</FooterLink>
-			<FooterLink href="#">Testimonials</FooterLink>
+			<Heading>Who we are</Heading>
+			<FooterLink href="#">Mission</FooterLink>
+			<FooterLink href="#">Teams</FooterLink>
+			<FooterLink href="#">Support</FooterLink>
 		</Column>
 		<Column>
-			<Heading>Services</Heading>
-			<FooterLink href="#">Writing</FooterLink>
-			<FooterLink href="#">Internships</FooterLink>
-			<FooterLink href="#">Coding</FooterLink>
-			<FooterLink href="#">Teaching</FooterLink>
+			<Heading>Support</Heading>
+			<FooterLink href="#">Subscript</FooterLink>
+			<FooterLink href="#">Advertise</FooterLink>
 		</Column>
 		<Column>
-			<Heading>Contact Us</Heading>
-			<FooterLink href="#">Uttar Pradesh</FooterLink>
-			<FooterLink href="#">Ahemdabad</FooterLink>
-			<FooterLink href="#">Indore</FooterLink>
-			<FooterLink href="#">Mumbai</FooterLink>
+			<Heading>News</Heading>
+			<FooterLink href="#">Latest News</FooterLink>
+			<FooterLink href="#">Supscript</FooterLink>
+			<FooterLink href="#">FAQ</FooterLink>
 		</Column>
 		<Column>
-			<Heading>Social Media</Heading>
-			<FooterLink href="#">
-			<i className="fab fa-facebook-f">
-				<span style={{ marginLeft: "10px" }}>
-				Facebook
-				</span>
-			</i>
-			</FooterLink>
-			<FooterLink href="#">
-			<i className="fab fa-instagram">
-				<span style={{ marginLeft: "10px" }}>
-				Instagram
-				</span>
-			</i>
-			</FooterLink>
-			<FooterLink href="#">
-			<i className="fab fa-twitter">
-				<span style={{ marginLeft: "10px" }}>
-				Twitter
-				</span>
-			</i>
-			</FooterLink>
-			<FooterLink href="#">
-			<i className="fab fa-youtube">
-				<span style={{ marginLeft: "10px" }}>
-				Youtube
-				</span>
-			</i>
-			</FooterLink>
+			<Heading>Contact</Heading>
+            <FooterLink href="#">Phone: 1+123-456-789</FooterLink>
+			<FooterLink href="#">Email: pinion.ubc@gmail.com</FooterLink>
 		</Column>
 		</Row>
 	</Container>

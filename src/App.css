@@ -1,5 +1,107 @@
 .App {
-  text-align: center;
+  text-align: left;
+  padding-left: 30px;
+}
+
+:root {
+  /* Palette */
+  --white-color: #FFFFFF;
+  --purple-color: #9565D1;
+  --black-color: #42413d;
+  --gray-color: #f6f5f1;
+  --gray-dark-color: #d6d5d2;
+  --light-grey-color: #CBF3F0;
+  --green-color: #2EC4B6;
+  --orange-color: #FF9F1C;
+  --yellow-color: #FFBF69;
+ 
+ /* App Theme / Brand */
+
+}
+
+.app-styleguide {
+ font-family: "Helvetica", sans-serif;
+ margin-top: 16px
+}
+
+.app-styleguide > * {
+ margin-top: 16px
+}
+
+.app-styleguide button {
+ font-size: 1rem;
+ width: 8em;
+ padding: 0.25em;
+ border: 0.125em solid transparent;
+ border-radius: 0.5em;
+ color: var(--white-color);
+}
+
+.app-styleguide button:hover {
+ background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2));
+}
+
+.app-styleguide a {
+ font-size: 1rem;
+ color: var(--green-color);
+}
+
+.app-styleguide a:hover {
+ font-size: 1rem;
+ filter: brightness(0.8);
+}
+
+.app-styleguide input {
+ font-size: 1rem;
+ line-height: 1.5;
+ background-color: var(--gray-color);
+ color: var(--black-color);
+ border: 0.0625em solid rgba(0,0,0,0);
+ border-radius: 0.75em;
+ padding: 0.5em 0.75em;
+ outline: none;
+}
+
+.app-styleguide input:focus {
+ background-color: var(--white-color);
+ border-color: var(--gray-dark-color);
+}
+
+.app-styleguide input.invalid {
+ border: 0.0625em solid var(--red-color);
+ color: var(--red-color);
+ background: var(--white-color);
+}
+
+.app-styleguide .btn-secondary {
+ background-color: var(--gray-dark-color);
+ color: var(--black-color);
+}
+
+.app-styleguide .btn-destructive {
+ background-color: var(--red-color);
+}
+
+.app-styleguide .btn-primary {
+ background-color: var(--green-color);
+}
+
+.app-styleguide .btn-tertiary {
+ background-color: var(--yellow-color);
+ color: var(--black-color);
+}
+
+.app-styleguide h1 {
+ color: var(--green-color);
+}
+
+.app-styleguide p,
+.app-styleguide h2 {
+ color: var(--black-color);
+}
+
+.app-styleguide .close-icon {
+ color: var(--gray-dark-color);
 }
 
 .App-logo {

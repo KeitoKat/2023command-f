@@ -39,7 +39,7 @@ const Navbar = () => {
             Resources
           </MenuLink>
           <MenuLink to="/Feedback" activeStyle>
-            <img style={{ width: 160, height: 55}} src= {shareFeedback} alt="React Logo" />
+            <img style={{ width: 150, height: 45}} src= {shareFeedback} alt="React Logo" />
           </MenuLink>
           <MenuLink to="/elevators" activeStyle>
             <img style={{ width: 220, height: 54, marginLeft: '0.5rem'}} src= {userImage} alt="React Logo" />

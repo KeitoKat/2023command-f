@@ -28,6 +28,12 @@
   cursor: pointer;
 }
 
+.collapse{
+    position: fixed;
+    right:30px;
+    bottom:425px;
+}
+
 /* CSS styles for the chatbot messages container */
 .chatbot-messages {
   height: 400px;

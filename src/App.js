@@ -1,7 +1,6 @@
 import React from 'react';
 import axios from 'axios';
 import './App.css';
-import Profile from "./components/Profile.js"
 import Footer from './components/Footer.js';
 import Navbar from "./components/Navbar"
 // import myLogo from "./components/Pinion_logo.png"

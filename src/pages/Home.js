@@ -13,18 +13,19 @@ return (
         <div>
             <img src={homeTop}/>
 	    </div>
-        <div>
-        <h1>Accessibility Guidance</h1>
-          <p1>UBC offers accessible, inclusive, and sustainable accomodations in both Vancouver and Okanagan campuses</p1>
+        <div class="Map">
+          <h1>Accessibility Guidance</h1>
+          <p class="noline">UBC offers accessible, inclusive, and sustainable accommodations in both Vancouver and Okanagan Campuses.</p>
           <Link to="/gender-neutral">
-            <img style={{ width: 230, height: 262}} src= {genderNeutral}/>
+            <img style={{ width: 220, height: 252}} src= {genderNeutral}/>
           </Link>
           <Link to="/elevators">
-            <img style={{ width: 230, height: 262}} src= {elevators}/>
+            <img style={{ width: 220, height: 252}} src= {elevators}/>
           </Link>
           <Link to="/water-fountains">
-            <img style={{ width: 230, height: 262}} src= {microwave}/>
+            <img style={{ width: 220, height: 252}} src= {microwave}/>
           </Link> 
+
         </div>
         <div class="video-placeholder">
             <h1 class="title">How to use it?</h1>

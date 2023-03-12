@@ -10,7 +10,7 @@ const Map = () => {
     return (
         <div class="Map">
           <h1>Resources Map</h1>
-          <p>Choose your priority</p>
+          <p class="withLine">Choose your priority</p>
           <Link to="/gender-neutral">
             <img style={{ width: 220, height: 252}} src= {genderNeutral}/>
           </Link>

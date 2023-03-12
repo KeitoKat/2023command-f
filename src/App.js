@@ -2,10 +2,10 @@ import React from 'react';
 import './App.css';
 import Profile from "./components/Profile.js"
 import Footer from './components/Footer.js';
+import Navbar from "./components/Navbar"
 
 import {useState, useEffect} from "react"
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import navbar from "./components/navbar"
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home"
 import AboutUs from "./pages/About"
 import Maps from "./pages/Map"
@@ -20,15 +20,16 @@ function App() {
     console.log("Hello World!!!!");
   })
   return (
-    <Router>
-      <navbar />
-      <Switch>
-        <Route path='/' exact component={Dogs} />
-        <Route path='/A' component={Cats} />
-        <Route path='/sheeps' component={Sheeps} />
-        <Route path='/goats' component={Goats} />
-      </Switch>
     <div style = {{backgroundColor: party? "blue" : "white"}} className="App">
+      <Router>
+        <Navbar/>
+        <Routes>
+          <Route path='/' element={<Home/>} />
+          <Route path='/About' element={<AboutUs/>} />
+          <Route path='/Map' element={<Maps/>} />
+          <Route path='/Feedback' element={<Feedback/>} />
+        </Routes>
+      </Router>
       <h1>
         {counter}
       </h1>
@@ -63,7 +64,6 @@ function App() {
         image="https://bloximages.chicago2.vip.townnews.com/vtcng.com/content/tncms/assets/v3/editorial/5/e8/5e8a9a36-4dc1-11ea-83e8-1787e2a1ead4/5e443cedd0598.image.jpg?resize=394%2C500"/>
 
       <Footer/>
-      </Router>
     </div>
   );
 }

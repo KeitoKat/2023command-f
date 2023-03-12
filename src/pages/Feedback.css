@@ -1,0 +1,16 @@
+.top-container-feedback{
+    margin: auto;
+    width: 100%;
+    height: 300px;
+    padding: 10px;
+}
+
+.form-container{
+    margin: auto;
+    width: 70%;
+    padding: 10px;
+}
+
+.title-feedback{
+    margin-left: 50px;
+}

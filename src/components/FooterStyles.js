@@ -8,7 +8,7 @@ bottom: 0;
 width: 100%;
 
 
-@media (max-width: 1000px) {
+@media (max-width: 100%) {
 	padding: 70px 30px;
 }
 `;
@@ -17,7 +17,7 @@ export const Container = styled.div`
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	max-width: 1000px;
+	max-width: 100%;
 	margin: 0 auto;
 	/* background: red; */
 `

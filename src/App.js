@@ -4,7 +4,12 @@ import Profile from "./components/Profile.js"
 import Footer from './components/Footer.js';
 
 import {useState, useEffect} from "react"
-import "bootstrap/dist/css/bootstrap.min.css";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import navbar from "./components/navbar"
+import Home from "./pages/Home"
+import AboutUs from "./pages/About"
+import Maps from "./pages/Map"
+import Feedback from "./pages/Feedback"
 
 
 function App() {
@@ -15,6 +20,14 @@ function App() {
     console.log("Hello World!!!!");
   })
   return (
+    <Router>
+      <navbar />
+      <Switch>
+        <Route path='/' exact component={Dogs} />
+        <Route path='/A' component={Cats} />
+        <Route path='/sheeps' component={Sheeps} />
+        <Route path='/goats' component={Goats} />
+      </Switch>
     <div style = {{backgroundColor: party? "blue" : "white"}} className="App">
       <h1>
         {counter}
@@ -50,6 +63,7 @@ function App() {
         image="https://bloximages.chicago2.vip.townnews.com/vtcng.com/content/tncms/assets/v3/editorial/5/e8/5e8a9a36-4dc1-11ea-83e8-1787e2a1ead4/5e443cedd0598.image.jpg?resize=394%2C500"/>
 
       <Footer/>
+      </Router>
     </div>
   );
 }

@@ -7,11 +7,6 @@ import userImage from "./user_image1.png";
 import shareFeedback from "./share_feedback.png"
 
 const Navbar = () => {
-//   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  
-//   const toggleDropdown = () => {
-//     setIsDropdownOpen(!isDropdownOpen);
-//     };
   const [showDropdown, setShowDropdown] = useState(false);
 
   const handleMouseEnter = () => {

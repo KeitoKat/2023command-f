@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import { PrimaryNav, MenuLink, Menu, Hamburger } from './MapElement'
 import genderNeutral from './gender-neutral.svg'
 import elevators from "./elevators.svg"
 import microwave from "./microwaves.svg"

@@ -1,5 +1,4 @@
 import React from "react";
-import footer from "./Footer.png";
 import footer2 from "./Footer_v2.svg";
 import {
 Box,

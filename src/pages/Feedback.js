@@ -1,6 +1,5 @@
 import React from "react";
 import './Feedback.css';
-import img from './Feedback-top.png';
 import img2 from "./LandingPage.svg";
   
 const Home = () => {

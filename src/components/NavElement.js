@@ -22,19 +22,7 @@ export const MenuLink = styled(Link)`
   height: 100%;
   &.active {
 
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-padding: 8.4px 12.4px;
-gap: 16.8px;
-
-width: 168px;
-height: 44.4px;
-
-background: #9565D1;
-color: #ffffff;
-border-radius: 60px;
+text-decoration: underline
   }
 `
 export const Hamburger = styled(FaBars)`
@@ -60,3 +48,12 @@ export const Menu = styled.div`
   }
 `
 // max-width: 850px
+// display: flex;
+// flex-direction: row;
+// justify-content: center;
+// align-items: center;
+// padding: 8.4px 12.4px;
+// gap: 16.8px;
+
+// width: 168px;
+// height: 44.4px;

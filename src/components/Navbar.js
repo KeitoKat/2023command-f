@@ -1,11 +1,24 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { PrimaryNav, MenuLink, Menu, Hamburger } from './NavElement'
 import myLogo from './Pinion_logo.png'
 import './Navbar.css'
 import {Link} from 'react-router-dom';
 
-
 const Navbar = () => {
+//   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  
+//   const toggleDropdown = () => {
+//     setIsDropdownOpen(!isDropdownOpen);
+//     };
+  const [showDropdown, setShowDropdown] = useState(false);
+
+  const handleMouseEnter = () => {
+    setShowDropdown(true);
+  };
+
+  const handleMouseLeave = () => {
+    setShowDropdown(false);
+  };
   return (
     <>
       <PrimaryNav >
@@ -20,8 +33,8 @@ const Navbar = () => {
           <MenuLink to="/About" activeStyle>
             About Us
           </MenuLink>
-          <MenuLink to="/Map" activeStyle>
-            Maps
+          <MenuLink to="/Maps" activeStyle>
+            Resources
           </MenuLink>
           <MenuLink to="/Feedback" activeStyle>
             Share Feedback

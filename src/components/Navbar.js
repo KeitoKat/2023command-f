@@ -11,7 +11,6 @@ const Navbar = () => {
       <PrimaryNav >
         <Hamburger />
         <Menu>    
-        {/* <img style={{ width: 102, height: 54, marginRight: '4rem'}} src= {myLogo} alt="React Logo" /> */}
           <Link to="./">
             <img style={{ width: 102, height: 54, marginRight: '4rem'}} src= {myLogo} alt="React Logo" />
           </Link>
@@ -25,7 +24,7 @@ const Navbar = () => {
             Maps
           </MenuLink>
           <MenuLink to="/Feedback" activeStyle>
-            Feedback
+            Share Feedback
           </MenuLink>
         </Menu>
       </PrimaryNav>

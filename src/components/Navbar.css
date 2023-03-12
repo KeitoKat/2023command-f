@@ -6,37 +6,6 @@
     top: 10px;
 }
 
-.dropdown {
-    position: relative;
-  }
-  
-  .dropdown .dropdown-menu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    z-index: 1;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    list-style-type: none;
-    text-decoration: none;
-  }
-  
-  .dropdown:hover .dropdown-menu,
-.dropdown-menu:hover {
-  display: block;
-  display-box: block;
-}
-  
-  .dropdown-menu li {
-    padding: 10px;
-  }
-  
-  .dropdown-menu li:hover {
-    background-color: #f2f2f2;
-  }
-
   .purple { display: flex;
     flex-direction: row;
     justify-content: center;

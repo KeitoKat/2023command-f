@@ -1,17 +1,34 @@
-
+/* 
 .img1 {
     position: absolute;
     width: 400px;
     height: 400px;
     left: 1013px;
     top: 154px;
-}
+} */
 
 .top-container{
-    position: absolute;
+    position: flex;
     width: 100%;
     height: 241px;
     left: 0px;
     top: 95px;
+    bottom: 0px;
     background: #2EC4B6;
+}
+.middle-container{
+    position: flex;
+    width: 100%;
+    height: 241px;
+    left: 0px;
+    top: 0px;
+    background: #CBF3F0;
+}
+.middle-title{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    display: flex;
+    /* align-items: center; */
+    text-align: center;
 }

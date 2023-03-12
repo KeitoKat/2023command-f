@@ -11,14 +11,19 @@ const Map = () => {
         <div class="Map">
           <h1>Resources Map</h1>
           <p>Choose your priority</p>
-          <div>
-      <Link to="/nature" target="_blank" rel="noreferrer">
-        <img src="/photos/tree-1.png" alt="Nature"></img>
-      </Link>
-    </div>
-          <img style={{ width: 230, height: 262}} src= {genderNeutral} alt="React Logo"/>
+          <Link to="./gender-neutral">
+            <img style={{ width: 230, height: 262}} src= {genderNeutral} alt="React Logo"/>
+          </Link>
+          <Link to="/elevators">
+            <img style={{ width: 230, height: 262}} src= {elevators} alt="React Logo"/>
+          </Link>
+          <Link to="/water-fountains">
+            <img style={{ width: 230, height: 262}} src= {microwave} alt="React Logo"/>
+          </Link>
+
+          {/* <img style={{ width: 230, height: 262}} src= {genderNeutral} alt="React Logo"/>
           <img style={{ width: 240, height: 268}} src= {elevators} alt="React Logo" />
-          <img style={{ width: 230, height: 262}} src= {microwave} alt="React Logo" />
+          <img style={{ width: 230, height: 262}} src= {microwave} alt="React Logo" /> */}
             {/* <Menu>    
               <Link to="/gender-neutral">
                 <img style={{ width: 102, height: 54, marginRight: '4rem'}} src= {genderNeutral} alt="React Logo" />

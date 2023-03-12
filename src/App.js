@@ -27,7 +27,7 @@ function App() {
         setParty(!party)}}>Party
       </button>
       <p>Command-f team</p>
-      <Footer/>
+     
       <iframe src="https://www.google.com/maps/d/embed?mid=1Nviv1JmRdpTNjj7BuXg06dc2uW0&ehbc=2E312F" width="640" height="480"></iframe>
       <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdcxkIMz2eSNHWU8CL6s3mhBxRJWdidPQghfH5pX-iMr2nZcw/viewform?embedded=true" width="640" height="955" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
       <div>Hello!</div>
@@ -49,7 +49,7 @@ function App() {
         name="Andrea" 
         image="https://bloximages.chicago2.vip.townnews.com/vtcng.com/content/tncms/assets/v3/editorial/5/e8/5e8a9a36-4dc1-11ea-83e8-1787e2a1ead4/5e443cedd0598.image.jpg?resize=394%2C500"/>
 
-      
+      <Footer/>
     </div>
   );
 }

@@ -31,13 +31,13 @@ const Navbar = () => {
             Home
           </MenuLink>
           <MenuLink to="/About" activeStyle>
-            About
+            About Us
           </MenuLink>
           <MenuLink to="/Map" activeStyle>
-            Products
+            Maps
           </MenuLink>
           <MenuLink to="/Feedback" activeStyle>
-            Blog
+            Feedback
           </MenuLink>
         </Menu>
       </PrimaryNav>

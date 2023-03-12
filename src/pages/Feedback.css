@@ -7,8 +7,10 @@
 
 .form-container{
     margin: auto;
-    width: 70%;
+    width: 50%;
     padding: 10px;
+    padding-top: 15px;
+    padding-bottom: 20px;
 }
 
 .title-feedback{

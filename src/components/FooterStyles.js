@@ -8,6 +8,7 @@ bottom: 0;
 width: 100%;
 
 
+
 @media (max-width: 100%) {
 	padding: 70px 30px;
 }

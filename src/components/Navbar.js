@@ -1,3 +1,34 @@
+import React from 'react'
+import { PrimaryNav, MenuLink, Menu, Hamburger } from './NavElement'
+import myLogo from './Pinion_logo.png'
+const Navbar = () => {
+  return (
+    <>
+      <PrimaryNav >
+        <Hamburger />
+        <Menu>
+          <MenuLink to="/Home" activeStyle>
+            myLogo
+          </MenuLink>
+          <MenuLink to="/Home" activeStyle>
+            Home
+          </MenuLink>
+          <MenuLink to="/About" activeStyle>
+            About Us
+          </MenuLink>
+          <MenuLink to="/Map" activeStyle>
+            Maps
+          </MenuLink>
+          <MenuLink to="/Feedback" activeStyle>
+            Feedback
+          </MenuLink>
+        </Menu>
+      </PrimaryNav>
+    </>
+  )
+}
+export default Navbar
+
 // import React from 'react';
 // import {  Link } from "react-router-dom";
 // const Navbar= () =>{
@@ -19,29 +50,3 @@
 //   );
 // }
 // export default Navbar;
-import React from 'react'
-import { PrimaryNav, MenuLink, Menu, Hamburger } from './NavElement'
-const Navbar = () => {
-  return (
-    <>
-      <PrimaryNav>
-        <Hamburger />
-        <Menu>
-          <MenuLink to="/Home" activeStyle>
-            Home
-          </MenuLink>
-          <MenuLink to="/About" activeStyle>
-            About Us
-          </MenuLink>
-          <MenuLink to="/Map" activeStyle>
-            Maps
-          </MenuLink>
-          <MenuLink to="/Feedback" activeStyle>
-            Feedback
-          </MenuLink>
-        </Menu>
-      </PrimaryNav>
-    </>
-  )
-}
-export default Navbar

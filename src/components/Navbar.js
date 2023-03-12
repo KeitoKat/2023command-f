@@ -2,6 +2,7 @@ import React from 'react'
 import { PrimaryNav, MenuLink, Menu, Hamburger } from './NavElement'
 import myLogo from './Pinion_logo.png'
 import './Navbar.css'
+import {Link} from 'react-router-dom';
 
 
 const Navbar = () => {
@@ -10,7 +11,10 @@ const Navbar = () => {
       <PrimaryNav >
         <Hamburger />
         <Menu>    
-        <img style={{ width: 102, height: 54, marginRight: '4rem'}} src= {myLogo} alt="React Logo" />
+        {/* <img style={{ width: 102, height: 54, marginRight: '4rem'}} src= {myLogo} alt="React Logo" /> */}
+          <Link to="./">
+            <img style={{ width: 102, height: 54, marginRight: '4rem'}} src= {myLogo} alt="React Logo" />
+          </Link>
           <MenuLink to="/" activeStyle>
             Home
           </MenuLink>

@@ -3,6 +3,8 @@ import './App.css';
 import Profile from "./components/Profile.js"
 import Footer from './components/Footer.js';
 import Navbar from "./components/Navbar"
+// import myLogo from "./components/Pinion_logo.png"
+import { ReactComponent as Logo } from './components/Pinion_logo.png'
 
 import {useState, useEffect} from "react"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";

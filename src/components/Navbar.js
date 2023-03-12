@@ -3,6 +3,7 @@ import { PrimaryNav, MenuLink, Menu, Hamburger } from './NavElement'
 import myLogo from './Pinion_logo.png'
 import './Navbar.css'
 import {Link} from 'react-router-dom';
+import userImage from "./user_image.png";
 
 const Navbar = () => {
 //   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -39,6 +40,10 @@ const Navbar = () => {
           <MenuLink to="/Feedback" activeStyle>
             Share Feedback
           </MenuLink>
+          <MenuLink to="/elevators" activeStyle>
+            <img style={{ width: 220, height: 54, marginLeft: '0.5rem'}} src= {userImage} alt="React Logo" />
+          </MenuLink>
+          
         </Menu>
       </PrimaryNav>
     </>

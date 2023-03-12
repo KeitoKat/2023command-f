@@ -5,11 +5,20 @@ import './Navbar.css'
 import {Link} from 'react-router-dom';
 
 const Navbar = () => {
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+//   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   
-  const toggleDropdown = () => {
-    setIsDropdownOpen(!isDropdownOpen);
-    };
+//   const toggleDropdown = () => {
+//     setIsDropdownOpen(!isDropdownOpen);
+//     };
+  const [showDropdown, setShowDropdown] = useState(false);
+
+  const handleMouseEnter = () => {
+    setShowDropdown(true);
+  };
+
+  const handleMouseLeave = () => {
+    setShowDropdown(false);
+  };
   return (
     <>
       <PrimaryNav >
@@ -24,27 +33,9 @@ const Navbar = () => {
           <MenuLink to="/About" activeStyle>
             About Us
           </MenuLink>
-          {/* <MenuLink to="/Map" activeStyle>
-            Maps
-          </MenuLink> */}
-          <div className="dropdown">
-            <MenuLink onClick={toggleDropdown} activeStyle>
-              Maps
-            </MenuLink>
-            {isDropdownOpen && (
-              <ul className="dropdown-menu">
-                <li>
-                  <Link to="/gender-neutral">Gender Neutral Washrooms</Link>
-                </li>
-                <li>
-                  <Link to="/elevators">Elevator Map</Link>
-                </li>
-                <li>
-                  <Link to="/water-fountains">Water Fountains and Microwaves</Link>
-                </li>
-              </ul>
-            )}
-          </div>
+          <MenuLink to="/Maps" activeStyle>
+            Resources
+          </MenuLink>
           <MenuLink to="/Feedback" activeStyle>
             Share Feedback
           </MenuLink>

@@ -26,6 +26,7 @@
   .dropdown:hover .dropdown-menu,
 .dropdown-menu:hover {
   display: block;
+  display-box: block;
 }
   
   .dropdown-menu li {

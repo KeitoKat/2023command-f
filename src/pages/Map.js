@@ -1,11 +1,37 @@
-import React from "react";
-import './Map.css';
+import React, { useState } from 'react'
+import { PrimaryNav, MenuLink, Menu, Hamburger } from './MapElement'
+import genderNeutral from './gender-neutral.png'
+import elevators from "./elevators.png"
+import microwave from "./microwave.png"
+import './Map.css'
+import {Link} from 'react-router-dom';
 
 const Map = () => {
     return (
         <div class="Map">
-          <h1>Map Page</h1>
-        <iframe src="https://www.google.com/maps/d/embed?mid=1Nviv1JmRdpTNjj7BuXg06dc2uW0&ehbc=2E312F" width="640" height="480"></iframe>
+          <h1>Resources Map</h1>
+          <p>Choose your priority</p>
+          <div>
+      <Link to="/nature" target="_blank" rel="noreferrer">
+        <img src="/photos/tree-1.png" alt="Nature"></img>
+      </Link>
+    </div>
+          <img style={{ width: 230, height: 262}} src= {genderNeutral} alt="React Logo"/>
+          <img style={{ width: 240, height: 268}} src= {elevators} alt="React Logo" />
+          <img style={{ width: 230, height: 262}} src= {microwave} alt="React Logo" />
+            {/* <Menu>    
+              <Link to="/gender-neutral">
+                <img style={{ width: 102, height: 54, marginRight: '4rem'}} src= {genderNeutral} alt="React Logo" />
+              </Link>
+            <MenuLink to="/elevators" activeStyle>
+              Home
+            </MenuLink>
+            <MenuLink to="/water-fountain" activeStyle>
+              About Us
+            </MenuLink>
+          
+            </Menu> */}
+        
 
         </div>
       );

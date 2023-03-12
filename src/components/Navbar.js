@@ -33,7 +33,7 @@ const Navbar = () => {
           <MenuLink to="/About" activeStyle>
             About Us
           </MenuLink>
-          <MenuLink to="/Maps" activeStyle>
+          <MenuLink to="/Map" activeStyle>
             Resources
           </MenuLink>
           <MenuLink to="/Feedback" activeStyle>

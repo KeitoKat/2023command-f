@@ -12,3 +12,10 @@
     justify-content: center;
     align-items: center;
 }
+h1 { text-align: center;} 
+p1 {position: relative; 
+    top: -250px; 
+    left: 22%; }
+
+
+  

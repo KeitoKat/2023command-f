@@ -1,6 +1,11 @@
 import React from "react";
 import homeTop from "./home-top.svg";
 import './Home.css'
+import {BrowserRouter as Router, Routes, Route, Link} from "react-router-dom";
+import genderNeutral from './gender-neutral.png'
+import elevators from "./elevators.png"
+import microwave from "./microwave.png"
+import './Map.css'
 
 const About = () => {
 return (
@@ -9,7 +14,17 @@ return (
             <img src={homeTop}/>
 	    </div>
         <div>
-
+        <h1>Accessibility Guidance</h1>
+          <p1>UBC offers accessible, inclusive, and sustainable accomodations in both Vancouver and Okanagan campuses</p1>
+          <Link to="/gender-neutral">
+            <img style={{ width: 230, height: 262}} src= {genderNeutral}/>
+          </Link>
+          <Link to="/elevators">
+            <img style={{ width: 230, height: 262}} src= {elevators}/>
+          </Link>
+          <Link to="/water-fountains">
+            <img style={{ width: 230, height: 262}} src= {microwave}/>
+          </Link> 
         </div>
         <div class="video-placeholder">
             <h1 class="title">How to use it?</h1>

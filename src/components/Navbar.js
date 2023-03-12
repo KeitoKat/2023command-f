@@ -25,7 +25,7 @@ const Navbar = () => {
         <Hamburger />
         <Menu>    
           <Link to="./">
-            <img style={{ width: 102, height: 54, marginRight: '4rem'}} src= {myLogo} alt="React Logo" />
+            <img style={{ width: 102, height: 54, marginRight: '6rem'}} src= {myLogo} alt="React Logo" />
           </Link>
           <MenuLink to="/" activeStyle>
             Home

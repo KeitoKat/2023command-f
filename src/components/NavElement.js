@@ -9,7 +9,7 @@ export const PrimaryNav = styled.nav`
   display: flex;
   background: #ffffff;
   justify-content: space-between;
-  padding: 0.1rem calc((75vw - 1000px) / 2);
+  padding: 0.1rem calc((85vw - 1000px) / 2);
 `
 
 export const MenuLink = styled(Link)`

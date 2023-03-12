@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import axios from 'axios';
 import './Chatbot.css';
 
@@ -47,12 +47,19 @@ function Chatbot() {
 
   return (
     <div>
-      <h1>Chatbot</h1>
-      <form onSubmit={handleSubmit}>
-        <input type="text" value={userInput} onChange={handleUserInput}/>
-        <button type="submit">Send</button>
-      </form>
-      <p>{botResponse}</p>
+        
+        <div class = "chatbot-container">
+            <h1 class="chatbot-header">Chatbot</h1>
+            <form onSubmit={handleSubmit}>
+                <dev class="chatbot-input-container">
+                    <input type="text" value={userInput} onChange={handleUserInput}/>
+                </dev>
+                <button class= "button" type="submit">Send</button>
+            </form>
+            <div class ="chatbot-message-text">
+                <p>{botResponse}</p>
+            </div>
+        </div>
     </div>
   );
 }

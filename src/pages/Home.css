@@ -1,0 +1,14 @@
+.video-placeholder{
+    background: #FFBF69;
+    top: 0;
+    align-content: center;
+    padding: 50px;
+}
+.title{
+    text-align: center;
+}
+.youTube{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

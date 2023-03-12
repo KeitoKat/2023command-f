@@ -9,6 +9,14 @@ import Home from "./pages/Home";
 import AboutUs from "./pages/About";
 import Maps from "./pages/Map";
 import Feedback from "./pages/Feedback";
+import GenderNeutral from "./pages/gender-neutral";
+import Elevators from "./pages/elevators";
+import Microwave from "./pages/water-fountains";
+import genderNeutral from './pages/gender-neutral.png'
+import elevators from "./pages/elevators.png"
+import microwave from "./pages/microwave.png"
+import './pages/Map.css'
+import {Link} from 'react-router-dom';
 
 function App() {
   return (

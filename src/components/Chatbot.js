@@ -52,7 +52,7 @@ function Chatbot() {
             <h1 class="chatbot-header">Chatbot</h1>
             <form onSubmit={handleSubmit}>
                 <dev class="chatbot-input-container">
-                    <input type="text" value={userInput} onChange={handleUserInput}/>
+                    <input type="text" placeholder="Type your message here..." value={userInput} onChange={handleUserInput}/>
                 </dev>
                 <button class= "button" type="submit">Send</button>
             </form>

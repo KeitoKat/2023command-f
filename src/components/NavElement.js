@@ -29,7 +29,7 @@ align-items: center;
 padding: 8.4px 12.4px;
 gap: 16.8px;
 
-width: 90px;
+width: 168px;
 height: 44.4px;
 
 background: #9565D1;

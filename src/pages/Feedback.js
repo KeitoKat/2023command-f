@@ -1,11 +1,11 @@
-import React from 'react';
-const Feedback = () =>{
+import React from "react";
+  
+const Home = () => {
   return (
     <div>
-      <h3>Feedback</h3>
+      <h1>Feedback Page</h1>
     </div>
   );
-}
-export default Feedback;
-
-Feedback.js
+};
+  
+export default Home;

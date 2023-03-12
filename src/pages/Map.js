@@ -1,11 +1,11 @@
-import React from 'react';
-const Map = () =>{
-  return (
-    <div>
-      <h3>Map</h3>
-    </div>
-  );
-}
-export default Map;
+import React from "react";
 
-Map.js
+const ContactUs = () => {
+return (
+	<div>
+	<h1>Map Page</h1>
+	</div>
+);
+};
+
+export default ContactUs;

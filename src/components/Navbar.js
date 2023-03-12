@@ -1,13 +1,16 @@
 import React from 'react'
 import { PrimaryNav, MenuLink, Menu, Hamburger } from './NavElement'
 import myLogo from './Pinion_logo.png'
+import './Navbar.css'
+
+
 const Navbar = () => {
   return (
     <>
       <PrimaryNav >
         <Hamburger />
         <Menu>
-          <img src= {myLogo} />
+          <img style={{ width: 102, height: 54}} src= {myLogo} alt="React Logo" />
           <MenuLink to="/Home" activeStyle>
             Home
           </MenuLink>

@@ -9,9 +9,9 @@ const Navbar = () => {
     <>
       <PrimaryNav >
         <Hamburger />
-        <Menu>
-          <img style={{ width: 102, height: 54}} src= {myLogo} alt="React Logo" />
-          <MenuLink to="/Home" activeStyle>
+        <Menu>    
+        <img style={{ width: 102, height: 54, marginRight: '4rem'}} src= {myLogo} alt="React Logo" />
+          <MenuLink to="/" activeStyle>
             Home
           </MenuLink>
           <MenuLink to="/About" activeStyle>

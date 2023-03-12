@@ -1,4 +1,5 @@
 import React from 'react';
+import axios from 'axios';
 import './App.css';
 import Profile from "./components/Profile.js"
 import Footer from './components/Footer.js';
@@ -13,14 +14,46 @@ import AboutUs from "./pages/About"
 import Maps from "./pages/Map"
 import Feedback from "./pages/Feedback"
 
+const COHERE_API_KEY = process.env.REACT_APP_COHERE_API_KEY;
+
 
 function App() {
+  console.log("cohere api key", COHERE_API_KEY);
   const [counter, setCounter] = useState(0);
   const [party, setParty] = useState(false);
+  const [question, setQuestion] = useState('');
+  const [response , setResponse] = useState('');
 
-  useEffect(()=>{
-    console.log("Hello World!!!!");
-  })
+  const cohere = async (query) => {
+    const requestBody = {
+      "model": "command-xlarge-nightly",
+      "stream": false,
+      "query": query
+    };
+
+    const requestOptions = {
+      method: 'POST',
+      headers: {
+        'Cohere-Version': '2022-12-06',
+        'accept': 'application/json',
+        'content-type': 'application/json',
+        'authorization': `Bearer ${COHERE_API_KEY}`
+      },
+      data: JSON.stringify(requestBody),
+      url: 'https://api.cohere.ai/chat'
+    };
+
+    axios(requestOptions)
+      .then(response => {
+        console.log(response.data)
+        setResponse(response.data.reply);
+      })
+      .catch(error => {
+        console.log(error);
+      });
+
+  }
+
   return (
     <div style = {{backgroundColor: party? "blue" : "white"}} className="App">
       <Router>
@@ -32,6 +65,9 @@ function App() {
           <Route path='/Feedback' element={<Feedback/>} />
         </Routes>
       </Router>
+      {response}
+      <input type="text" value={question} onChange={(event) => setQuestion(event.target.value)} />
+      <button onClick={() => {cohere(question)}}></button>
       {/* <h1>
         {counter}
       </h1>

@@ -11,7 +11,7 @@ import Maps from "./pages/Map";
 import Feedback from "./pages/Feedback";
 import GenderNeutral from "./pages/gender-neutral";
 import Elevators from "./pages/elevators";
-import Microwave from "./pages/water-fountains";
+import WaterFountains from "./pages/water-fountains";
 import genderNeutral from './pages/gender-neutral.png'
 import elevators from "./pages/elevators.png"
 import microwave from "./pages/microwave.png"
@@ -28,6 +28,10 @@ function App() {
           <Route path='/About' element={<AboutUs/>} />
           <Route path='/Map' element={<Maps/>} />
           <Route path='/Feedback' element={<Feedback/>} />
+          <Route path='/gender-neutral' element={<GenderNeutral/>} />
+          <Route path='/gender-neutral' element={<GenderNeutral/>} />
+          <Route path='/elevators' element={<Elevators/>} />
+          <Route path='/water-fountains' element={<WaterFountains/>} />
         </Routes>
       </Router>
       <Chatbot/> {/* add the Chatbot component */}

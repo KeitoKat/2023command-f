@@ -11,8 +11,6 @@ const Map = () => {
         <div class="Map">
           <h1>Resources Map</h1>
           <p>Choose your priority</p>
-
-
           <Link to="/gender-neutral">
             <img style={{ width: 230, height: 262}} src= {genderNeutral}/>
           </Link>
